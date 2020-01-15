@@ -8,6 +8,7 @@ const controlItem = (props) => {
         <UserConsumer>
             {value => (
                 <div 
+                    title={`View ${props.type}`}
                     className={styles.ControlItem}
                     onClick={() => value.toggleUserView(props.type)}>
                         {props.children}

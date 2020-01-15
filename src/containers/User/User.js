@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import UserView from '../../components/User/UserView/UserView';
 import UserControls from '../../components/User/UserControls/UserControls';
+import Projects from '../Projects/Projects';
+import Contacts from '../Contacts/Contacts';
 
 import { UserProvider } from './UserContext';
 
@@ -10,7 +12,7 @@ import styles from './User.module.css';
 class User extends Component {
 
     state={
-        showProjects: false,
+        showProjects: true,
         showContacts: false
     }
 
@@ -23,16 +25,25 @@ class User extends Component {
     };
     
     render() {
-
         const user={ // the data the provider will contain
             toggleUserView: this.toggleUserView
         };
+
+        let userViewContent = null;
+        if(this.state.showProjects) {
+            userViewContent = <Projects />;
+        }
+        if(this.state.showContacts) {
+            userViewContent = <Contacts />;
+        }
 
         return(
             <UserProvider value={user}>
                 <div className={styles.User}>
                     <UserControls /> 
-                    <UserView />
+                    <UserView>
+                        {userViewContent}
+                    </UserView>
                 </div>
             </UserProvider>
         );
