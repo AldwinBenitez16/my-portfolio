@@ -1,0 +1,29 @@
+.ControlItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ControlItem svg {
+    fill: #ccc;
+    transition: fill .3s ease-in-out;
+}
+
+.ControlItem:hover svg {
+    fill: rgb(11, 72, 107);
+}
+
+@media(min-width: 529px) {
+    .ControlItem {
+        width: 100%;
+        height: 75px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

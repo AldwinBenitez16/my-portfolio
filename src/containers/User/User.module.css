@@ -1,0 +1,21 @@
+.User {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: calc(50vh - 300px);
+    left: calc(50vw - 45vw);
+    height: 600px;
+    width: 90vw;
+}
+
+@media(min-width: 529px) {
+    .User {
+        flex-direction: row;
+        top: calc(50vh - 250px);
+        left: calc(50vw - 250px);
+        height: 500px;
+        width: 500px;
+    }
+}

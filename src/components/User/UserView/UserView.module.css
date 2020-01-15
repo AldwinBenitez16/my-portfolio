@@ -1,0 +1,14 @@
+.UserView {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 4px;
+    opacity: 0.95;
+}
+
+@media(min-width: 529px) {
+    .UserView {
+        width: 90%;
+    }
+}
