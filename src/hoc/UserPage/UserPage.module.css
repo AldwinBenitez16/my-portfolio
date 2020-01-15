@@ -1,0 +1,16 @@
+.Header {
+    color: rgb(245, 98, 23);
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.Show {
+    display: block;
+}
+
+.Hide {
+    display: none;
+}

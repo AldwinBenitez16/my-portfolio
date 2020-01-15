@@ -29,20 +29,17 @@ class User extends Component {
             toggleUserView: this.toggleUserView
         };
 
-        let userViewContent = null;
-        if(this.state.showProjects) {
-            userViewContent = <Projects />;
-        }
-        if(this.state.showContacts) {
-            userViewContent = <Contacts />;
-        }
-
         return(
             <UserProvider value={user}>
                 <div className={styles.User}>
                     <UserControls /> 
                     <UserView>
-                        {userViewContent}
+                        <Projects
+                            show={this.state.showProjects}
+                            header="Projects" />
+                        <Contacts 
+                            show={this.state.showContacts}
+                            header="Contacts" />
                     </UserView>
                 </div>
             </UserProvider>
