@@ -10,12 +10,10 @@
     width: 90vw;
 }
 
-@media(min-width: 529px) {
+@media(min-width: 567px) {
     .User {
         flex-direction: row;
-        top: calc(50vh - 250px);
-        left: calc(50vw - 250px);
-        height: 500px;
-        width: 500px;
+        left: calc(50vw - 45vw);
+        width: 90vw
     }
 }

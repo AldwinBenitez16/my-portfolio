@@ -9,7 +9,7 @@ import { ReactComponent as ResumeIcon } from '../../../../assets/svgs/resume-ico
 const iconBar = () => {
     return(
         <div className={styles.IconBar}>
-            <h1 className={styles.Name}>Aldwin Benitez</h1>
+            <h1 className={styles.Name}>Aldwin <span className={styles.Extend}>Benitez</span></h1>
             <div className={styles.IconContainer}>
                 <GitIcon />
                 <LinkedInIcon />

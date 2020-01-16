@@ -1,0 +1,27 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    height: fit-content;
+    width: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.Success {
+    border: 1px solid #aaa;
+    background-color: transparent;
+    fill: #aaa;
+    transition: fill .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.Button:hover{
+    border: 1px solid rgb(11, 72, 107);
+    background-color: transparent;
+    fill: rgb(11, 72, 107);
+}

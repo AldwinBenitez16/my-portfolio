@@ -38,3 +38,22 @@
 .IconContainer svg:hover {
     fill: rgb(11, 72, 107);
 }
+
+.Extend {
+    display: none;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+@media(min-width: 411px) {
+    .Extend {
+        display: inline;
+    }
+}
+
+@media(min-width: 441px) {
+    .Extend {
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+    }
+}
