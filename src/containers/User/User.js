@@ -13,7 +13,11 @@ class User extends Component {
 
     state={
         showProjects: true,
-        showContacts: false
+        showContacts: false,
+        topCentered: {
+            top: '',
+            height: ''
+        }
     }
 
     toggleUserView= (type) => {

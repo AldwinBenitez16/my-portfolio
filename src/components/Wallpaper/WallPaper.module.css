@@ -1,5 +1,11 @@
-.WallPaper {
+.WallPaperContainer {
     position: relative;
+}
+
+.WallPaper {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     background-image: url(../../assets/images/wallpaper.jpg);
@@ -8,7 +14,6 @@
 }
 
 .GradientOverlay {
-    position: absolute;
     top: 0;
     left: 0;
     height: 100vh;

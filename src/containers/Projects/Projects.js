@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 import UserPage from '../../hoc/UserPage/UserPage';
 import ProjectItem from '../../components/Projects/ProjectItem/ProjectItem';
 
-import { ReactComponent as ProjectImage1} from '../../assets/images/flix.png'
-
 import styles from './Projects.module.css';
+
+import Flix from '../../assets/images/flix.png';
+import Teckdegree_1 from '../../assets/images/teckdegree-1.png';
+import Teckdegree_2 from '../../assets/images/teckdegree-2.png';
+import Teckdegree_3 from '../../assets/images/teckdegree-3.png';
+import Teckdegree_4 from '../../assets/images/teckdegree-4.png';
+import Teckdegree_5 from '../../assets/images/teckdegree-5.png';
 
 class Projects extends Component {
     render() {
@@ -14,25 +19,9 @@ class Projects extends Component {
             <UserPage header={header} show={show}>
                 <div className={styles.Projects}>
                     <ProjectItem
-                        imgPath={ProjectImage1}
-                        title="First Project"
-                        overview="A project that uses React"/>
-                    <ProjectItem
-                        imgPath={}
-                        title="First Project"
-                        overview="A project that uses React"/>
-                    <ProjectItem
-                        imgPath={}
-                        title="First Project"
-                        overview="A project that uses React"/>
-                    <ProjectItem
-                        imgPath={}
-                        title="First Project"
-                        overview="A project that uses React"/>
-                    <ProjectItem
-                        imgPath={}
-                        title="First Project"
-                        overview="A project that uses React"/>
+                        image={Flix} 
+                        title="ReactMedia"
+                        overview="ReactMedia is built using react"/>
                 </div>
             </UserPage>
         );

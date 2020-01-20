@@ -8,15 +8,13 @@ class Projects extends Component {
     render() {
         const { show, header, children } = this.props;
 
-        let opacityClass = styles.Hide;
-        let speed = '.3s';
+        let showClass = styles.Hide;
         if(show) {
-            opacityClass = styles.Show;
-            speed = '1s';
+            showClass = styles.Show;
         }
 
         return(
-            <div style={{ transition: `opacity ${speed} ease-in-out` }} className={[styles.UserOverlay, opacityClass].join(' ')} >
+            <div className={showClass}>
                 <h2 className={styles.Header}>{header}</h2>
                 {children}
             </div>

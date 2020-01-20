@@ -1,7 +1,84 @@
+.ProjectItemImage {
+    width: 100%;
+}
+
+.ProjectItemImage img {
+    width: 100%;
+    height: 100%;
+}
+
 .ButtonContainer {
     display: flex;
+    padding: 10px 0;
 }
 
 .ButtonContainer button {
     margin-left: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.ButtonContainer button svg {
+    height: 20px;
+}
+
+.ProjectItem {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    max-width: 225px;
+}
+
+.ProjectInfo {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.ProjectInfo h3,
+.ProjectInfo h4,
+.ProjectInfo p {
+    margin: 0;
+}
+
+.ProjectInfo h3 {
+    text-align: center;
+    margin: 0;
+    border: none;
+    padding: 10px;
+    color: rgb(11, 72, 107);
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+}
+
+.ProjectInfo h4 {
+    color: rgb(245, 98, 23);
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.ProjectInfo p {
+    padding: 10px 0;
+}
+
+@media(min-width: 567px) {
+    .ProjectItem {
+        flex-direction: row;
+        max-width: unset;
+    }
+
+    .ProjectItemImage {
+        width: 100%;
+    }
+    
+    .ProjectItemImage img {
+        max-width: 225px;
+        height: unset;
+    }
+
+    .ProjectInfo h3 {
+        text-align: left;
+        padding: 10px 0;
+    }
+    
 }

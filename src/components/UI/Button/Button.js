@@ -6,7 +6,6 @@ const button = ({ type, dimensions, action, children }) => {
     return(
         <button 
             title={action}
-            style={dimensions}
             className={[styles.Button, styles[`${type}`]].join(' ')}>
             {children}
         </button>

@@ -7,22 +7,20 @@ import styles from './ProjectItem.module.css';
 import { ReactComponent as GitIcon } from '../../../assets/svgs/git-circle-icon.svg';
 import { ReactComponent as SourceIcon } from '../../../assets/svgs/source-icon.svg';
 
-const projectItem = ({ title, imgPath, overview }) => {
+const projectItem = ({ title, image, overview }) => {
     return(
         <div className={styles.ProjectItem}>
-            <img 
-                src={imgPath}
-                alt={title}/>
-            <div> 
+            <div className={styles.ProjectItemImage}>
+                <img 
+                    src={image}
+                    alt={title}/>
+            </div>
+            <div className={styles.ProjectInfo}> 
                 <h3>{title}</h3>
+                <h4>Overview</h4>
                 <p>{overview}</p>
                 <div className={styles.ButtonContainer}>
                     <Button 
-                        dimensions={{
-                            width: '40px',
-                            height: '40px',
-                            opacity: '.95'
-                        }}
                         action="View GitHub"
                         type="Success">
                         <GitIcon />
