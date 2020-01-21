@@ -15,14 +15,14 @@ class Contacts extends Component {
         return(
             <UserPage header={header} show={show}>
                 <div className={styles.Contacts}>
-                    <ContactItem 
+                    <ContactItem  
                         SVGIcon={MailIcon}
                         title="Email"
                         info="aldwin.benitez@yahoo.com" />
                     <ContactItem 
                         SVGIcon={PhoneIcon}
                         title="Phone"
-                        info="(000) - 000 - 0000" />
+                        info="(613) - 299 - 0016" />
                 </div>
             </UserPage>
         );

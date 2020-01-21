@@ -8,7 +8,7 @@ const contactItem = ({ SVGIcon, title, info }) => {
             <SVGIcon />
             <div className={styles.ContactItemTitle}>
                 <h2>{title}</h2>
-                <a>{info}</a>
+                <p>{info}</p>
             </div>
         </div>
     ); 

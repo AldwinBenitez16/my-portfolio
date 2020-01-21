@@ -1,13 +1,46 @@
 .ContactItem {
     display: flex; 
     padding: 25px;
+    box-shadow: 0px 0px 10px 1px #ccc;
+    width: 100%;
+}
+
+.ContactItem:first-child {
+    margin-bottom: 25px;
 }
 
 .ContactItem svg {
+    fill: rgb(11, 72, 107);
     height: 35px;
     margin-right: 10px;
 }
 
-.ContactItem h2 {
+.ContactItemTitle {
+    width: 100%;
+}
+
+.ContactItemTitle h2 {
+    color: rgb(11, 72, 107);
     margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ContactItemTitle p {
+    margin: 0;
+    color: rgb(245, 98, 23);
+    width: 100%;
+}
+
+@media(min-width: 786px) {
+    .ContactItem {
+        width:50%;
+    }
+
+    .ContactItem:first-child {
+        margin: 0;
+        margin-right: 10px;
+    }
 }
