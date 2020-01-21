@@ -1,16 +1,22 @@
 .User {
-    position: absolute;
+    position: relative;
     display: flex;
-    top: calc(50vh - 300px);
-    left: calc(50vw - 45vw);
+    margin: 75px auto;
     flex-direction: column;
     justify-content: center;
     width: 90vw;
-    height: 600px;
+    max-width: 500px;
 }
 
 @media(min-width: 567px) {
     .User {
         flex-direction: row;
+    }
+}
+
+@media(min-width: 786px) {
+    .User {
+        flex-direction: row;
+        max-width: 1250px;
     }
 }

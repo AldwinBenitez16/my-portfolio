@@ -1,0 +1,13 @@
+.ContactItem {
+    display: flex; 
+    padding: 25px;
+}
+
+.ContactItem svg {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.ContactItem h2 {
+    margin: 0;
+}

@@ -1,3 +1,9 @@
 .Projects {
     padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 57px;
 }

@@ -39,10 +39,10 @@ class User extends Component {
                     <UserControls /> 
                     <UserView>
                         <Projects
-                            show={this.state.showProjects}
+                            show={true}
                             header="Projects" />
                         <Contacts 
-                            show={this.state.showContacts}
+                            show={true}
                             header="Contacts" />
                     </UserView>
                 </div>
