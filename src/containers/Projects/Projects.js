@@ -30,18 +30,6 @@ class Projects extends Component {
                         image={Teckdegree_2} 
                         title="ReactMedia"
                         overview="ReactMedia is built using react"/>
-                    <ProjectItem
-                        image={Teckdegree_3} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
-                    <ProjectItem
-                        image={Teckdegree_4} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
-                    <ProjectItem
-                        image={Teckdegree_5} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
                 </div>
             </UserPage>
         );
