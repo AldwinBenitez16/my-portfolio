@@ -21,21 +21,25 @@ const projectItem = ({ title, image, overview, view, source }) => {
                 <h4>Overview</h4>
                 <p>{overview}</p>
                 <div className={styles.ButtonContainer}>
-                    <Button 
-                        action="View GitHub"
-                        type="Success"> 
-                            <a className={styles.Link} href={`${view}`} target="_blank" rel="noopener noreferrer"><ViewIcon /></a>
-                    </Button>
-                    <Button 
-                        dimensions={{
-                            width: '40px',
-                            height: '40px',
-                            opacity: '.95'
-                        }}
-                        action="View Source"
-                        type="Success">
-                            <a className={styles.Link} href={`${source}`} target="_blank" rel="noopener noreferrer"><SourceIcon /></a>
-                    </Button>
+                    <a className={styles.Link} href={`${view}`} target="_blank" rel="noopener noreferrer">
+                        <Button 
+                            action="View GitHub"
+                            type="Success"> 
+                                <ViewIcon />
+                        </Button>
+                    </a>
+                    <a className={styles.Link} href={`${source}`} target="_blank" rel="noopener noreferrer">
+                        <Button 
+                            dimensions={{
+                                width: '40px',
+                                height: '40px',
+                                opacity: '.95'
+                            }}
+                            action="View Source"
+                            type="Success">
+                                <SourceIcon />
+                        </Button>
+                    </a>
                 </div>
             </div>
         </div>
