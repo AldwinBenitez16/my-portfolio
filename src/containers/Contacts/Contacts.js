@@ -18,7 +18,8 @@ class Contacts extends Component {
                     <ContactItem  
                         SVGIcon={MailIcon}
                         title="Email"
-                        info="aldwin.benitez@yahoo.com" />
+                        info="aldwin.benitez@yahoo.com"
+                        mail="aldwin.benitez@yahoo.com" />
                     <ContactItem 
                         SVGIcon={PhoneIcon}
                         title="Phone"

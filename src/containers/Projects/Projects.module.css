@@ -1,7 +1,13 @@
 .Projects {
-    padding: 0 25px;
-    display: flex;    align-items: center;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     border-bottom: 1px solid #ccc;
     padding-bottom: 57px;
+}
+
+@media(min-width: 500px) {
+    .Projects {
+        padding: 0 25px;
+    }
 }

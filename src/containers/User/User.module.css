@@ -16,7 +16,7 @@
 
 @media(min-width: 786px) {
     .User {
-        flex-direction: row;
-        max-width: 1250px;
+        flex-direction: row; 
+        max-width: 1600px;
     }
 }

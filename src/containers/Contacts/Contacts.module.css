@@ -1,9 +1,14 @@
 .Contacts {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 25px 25px 25px;
     box-sizing: border-box;
     width: 100%;
+}
+
+@media(min-width: 500px) {
+    .Contacts {
+        padding: 0 25px 25px 25px;
+    }
 }
 
 @media(min-width: 786px) {

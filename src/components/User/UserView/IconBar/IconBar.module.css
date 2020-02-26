@@ -25,14 +25,10 @@
 
 .IconContainer svg {
     margin: 0;
-    margin-right: 5px;
+    margin-right: 10px;
     cursor: pointer;
     fill: #ccc;
     transition: fill .3s ease-in-out;
-}
-
-.IconContainer svg:last-child {
-    margin: 0;
 }
 
 .IconContainer svg:hover {

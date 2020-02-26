@@ -21,7 +21,7 @@ class Projects extends Component {
                         image={Flix} 
                         title="ReactMedia"
                         overview='ReactMedia is a website made using React and the RESTful API, "The Movie Database". ReactMedia uses react router for navigation, redux for state management and axios to make api calls.'
-                        view="https://flix-movies.netlify.com"
+                        view="https://reactmedia.netlify.com/#/home"
                         source="https://github.com/AldwinBenitez16/flix" />
                     <ProjectItem
                         image={Fit_in} 
