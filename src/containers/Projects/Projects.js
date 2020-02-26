@@ -17,23 +17,30 @@ class Projects extends Component {
             <UserPage header={header} show={show}>
                 <div className={styles.Projects}>
                     <ProjectItem
+                        spotlight={true}
                         image={Flix} 
                         title="ReactMedia"
-                        overview="ReactMedia is built using react"
+                        overview='ReactMedia is a website made using React and the RESTful API, "The Movie Database". ReactMedia uses react router for navigation, redux for state management and axios to make api calls.'
                         view="https://flix-movies.netlify.com"
                         source="https://github.com/AldwinBenitez16/flix" />
                     <ProjectItem
-                        image={Wheel_of_success} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
-                    <ProjectItem
                         image={Fit_in} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
+                        title="Fit-In"
+                        overview="Fit-In is a fitness website template made using Webpack, Sass, and Bootstrap. It explores the file structure and naming convention from the BEM methodology."
+                        view="https://fit-in.netlify.com/"
+                        source="https://github.com/AldwinBenitez16/work-in" />
+                    <ProjectItem
+                        image={Wheel_of_success} 
+                        title="Wheel of Success"
+                        overview="Game Show App is a website game that tests the users skill to correctly guess the letters of a phrase. However, if the user guesses the wrong letters 5 times, they lose. Game Show App uses HTML, CSS and Javascript."
+                        view="https://aldwinbenitez16.github.io/Game-Show-App/"
+                        source="https://github.com/AldwinBenitez16/Game-Show-App"/> 
                     <ProjectItem
                         image={Gallery} 
-                        title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
+                        title="Interactive Photo Gallery "
+                        overview="An interactive photo gallery that features the JQuery library, Lightbox. It also uses HTML, CSS, and Javascript."
+                        view="https://aldwinbenitez16.github.io/Interactive-Photo-Gallery/"
+                        source="https://github.com/AldwinBenitez16/Interactive-Photo-Gallery" />
                 </div>
             </UserPage>
         );

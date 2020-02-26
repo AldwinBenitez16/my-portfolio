@@ -28,6 +28,12 @@
     background: #fff;
     box-shadow: 0px 0px 10px 2px #ccc;
     margin-bottom: 25px;
+    transition: box-shadow .3s ease-in-out;
+    min-height: 600px;
+}
+
+.ProjectItem:hover {
+    box-shadow: 0px 0px 10px 5px #bbb;
 }
 
 .ProjectInfo {
@@ -58,7 +64,8 @@
 }
 
 .ProjectInfo p {
-    padding: 10px 0; 
+    padding: 10px 0;
+    min-height: 150px; 
 }
 
 .Link {
