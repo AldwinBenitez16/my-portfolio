@@ -16,7 +16,6 @@
 .Success {
     border: 1px solid #aaa;
     background-color: transparent;
-    fill: #aaa;
     transition: fill .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 

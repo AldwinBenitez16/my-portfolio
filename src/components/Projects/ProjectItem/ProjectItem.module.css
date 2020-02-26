@@ -61,6 +61,18 @@
     padding: 10px 0; 
 }
 
+.Link {
+    display: flex;
+}
+.Link svg {
+    fill: #aaa;
+    transition: fill .3s ease-in-out
+}
+
+.Link svg:hover {
+    fill: rgb(11, 72, 107);
+}
+
 @media(min-width: 786px) {
     .ProjectItem {
         width: calc(50% - 20px);

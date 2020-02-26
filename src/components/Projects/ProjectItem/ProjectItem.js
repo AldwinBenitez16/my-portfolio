@@ -7,7 +7,7 @@ import styles from './ProjectItem.module.css';
 import { ReactComponent as GitIcon } from '../../../assets/svgs/git-circle-icon.svg';
 import { ReactComponent as SourceIcon } from '../../../assets/svgs/source-icon.svg';
 
-const projectItem = ({ title, image, overview }) => {
+const projectItem = ({ title, image, overview, view, source }) => {
     return(
         <div className={styles.ProjectItem}>
             <div className={styles.ProjectItemImage}>
@@ -23,7 +23,7 @@ const projectItem = ({ title, image, overview }) => {
                     <Button 
                         action="View GitHub"
                         type="Success">
-                        <GitIcon />
+                            <a className={styles.Link} href={`${view}`} target="_blank" ><GitIcon /></a>
                     </Button>
                     <Button 
                         dimensions={{
@@ -33,7 +33,7 @@ const projectItem = ({ title, image, overview }) => {
                         }}
                         action="View Source"
                         type="Success">
-                        <SourceIcon />
+                            <a className={styles.Link} href={`${source}`} target="_blank" ><SourceIcon /></a>
                     </Button>
                 </div>
             </div>

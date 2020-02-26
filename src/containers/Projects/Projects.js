@@ -6,11 +6,9 @@ import ProjectItem from '../../components/Projects/ProjectItem/ProjectItem';
 import styles from './Projects.module.css';
 
 import Flix from '../../assets/images/flix.png';
-import Teckdegree_1 from '../../assets/images/teckdegree-1.png';
-import Teckdegree_2 from '../../assets/images/teckdegree-2.png';
-import Teckdegree_3 from '../../assets/images/teckdegree-3.png';
-import Teckdegree_4 from '../../assets/images/teckdegree-4.png';
-import Teckdegree_5 from '../../assets/images/teckdegree-5.png';
+import Wheel_of_success from '../../assets/images/wheel-of-success.png'; 
+import Fit_in from '../../assets/images/fit-in.png';
+import Gallery from '../../assets/images/photo-gallery.png';
 
 class Projects extends Component {
     render() {
@@ -21,13 +19,19 @@ class Projects extends Component {
                     <ProjectItem
                         image={Flix} 
                         title="ReactMedia"
-                        overview="ReactMedia is built using react"/>
+                        overview="ReactMedia is built using react"
+                        view="https://flix-movies.netlify.com"
+                        source="https://github.com/AldwinBenitez16/flix" />
                     <ProjectItem
-                        image={Teckdegree_1} 
+                        image={Wheel_of_success} 
                         title="ReactMedia"
                         overview="ReactMedia is built using react"/>
                     <ProjectItem
-                        image={Teckdegree_2} 
+                        image={Fit_in} 
+                        title="ReactMedia"
+                        overview="ReactMedia is built using react"/>
+                    <ProjectItem
+                        image={Gallery} 
                         title="ReactMedia"
                         overview="ReactMedia is built using react"/>
                 </div>
